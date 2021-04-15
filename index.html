@@ -7,24 +7,29 @@
     <!-- TODO add bootstrap and jquery -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/jass.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    
     <!-- Top of page -->
     <header>
       <h1>Weather Forecast Dashboard</h1>
     </header>
     
-    <!-- TODO add in col measurements -->
     <!-- Float left w/ btn under input -->
-    <div class='card'>
+    <div class='card col-4'>
       <h2>Search Cities</h2>
       <input class='searchBar'>
       <button class='btn' id='searchBtn'>Search</button>
+      <ul class='cityList' id='cityList'></ul>
     </div>
     
     <!-- Float right. To be populated w weather API -->
-    <div class='weatherCast' id='weatherDisplay'></div>
+    <div class='weatherCast col-8' id='weatherDisplay'>
+      <p id='cityChange'>Today's weather in </p>
+      <div id='generate'></div>
+    </div>
 
     <script src="assets/js/script.js"></script>
   

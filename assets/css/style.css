@@ -27,10 +27,39 @@ h2 {
     background-color: rgb(157, 204, 70);
     color: white;
     padding: 3%;
+    margin-top: 3%;
 }
 
 .searchBar {
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 3%;
+}
+
+.btn {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.weatherCast {
+    display: flex;
+    flex-direction: column;
+    float: right;
+   
+}
+
+p {
+     background-color: rgb(157, 204, 70);
+    color: white;
+    font-size: 20px;
+    padding: 1%;
 }
