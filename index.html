@@ -3,14 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fetch Response Status</title>
+    <title>Weather Dashboard</title>
+    <!-- TODO add bootstrap and jquery -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-
-
-
-
+    <!-- Top of page -->
+    <header>
+      <h1>Weather Forecast Dashboard</h1>
+    </header>
+    
+    <!-- TODO add in col measurements -->
+    <!-- Float left w/ btn under input -->
+    <div class='card'>
+      <h2>Search Cities</h2>
+      <input class='searchBar'>
+      <button class='btn' id='searchBtn'>Search</button>
+    </div>
+    
+    <!-- Float right. To be populated w weather API -->
+    <div class='weatherCast' id='weatherDisplay'></div>
 
     <script src="assets/js/script.js"></script>
   
