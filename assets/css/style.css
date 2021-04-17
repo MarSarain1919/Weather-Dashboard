@@ -1,5 +1,9 @@
-* {
+/* * {
     font-family: 'Spartan', sans-serif;
+}
+
+body {
+    background-color: rgb(238, 245, 226);
 }
 
 header {
@@ -62,4 +66,4 @@ p {
     color: white;
     font-size: 20px;
     padding: 1%;
-}
+} */
