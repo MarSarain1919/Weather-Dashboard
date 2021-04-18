@@ -7,6 +7,7 @@
     <!-- TODO add bootstrap and jquery -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/jass.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
@@ -16,48 +17,83 @@
       <h1>Weather Forecast Dashboard</h1>
     </nav>
     
+    <!-- float left -->
     <div class='searchContainer col-4'>
       <p>Search for a City:</p>>
-      <div class='citySearch'>
+      <div class='searchInput'>
         <input id="city-input" type="text">
         <button class="btn" id="searchBtn">Search</button>
       </div>
-     <form class="history" id="history"></form>
+      <div class="history" id="history">
+        <button class="btn" id="clearBtn">Clear History</button>
+        <ul class="historyList">
 
-    </div>
-
-    <div class="currentForecast">
-      <div class="row">
-        <div id="cityName"></div>
-        <!-- need to add icon -->
-        <img id="tempIcon" src="">
-      </div>
-      <div class="row">
-        <p id="temp"></p>
-      </div>
-      <div class="row">
-        <p id="humidity"></p>
-      </div>
-      <div class="row">
-        <p id="windSpeed"></p>
-      </div>
-      <div class="row">
-        <p id="uV"></p>
-      </div>
-    </div>
-    
-    <div class="5DayForecast">
-      <p>5-Day Forecast</p>
-      <div>
-        <div class="futureForecast"></div>
-        <div class="futureForecast"></div>
-        <div class="futureForecast"></div>
-        <div class="futureForecast"></div>
-        <div class="futureForecast"></div>
+        </ul>
       </div>
     </div>
 
+    <!-- float right -->
+    <div class="displayContainer">
+      <div class="currentForecast">
+        <div class="row">
+          <div id="cityName"></div>
+          <!-- need to add icon -->
+          <img id="tempIcon" src="">
+        </div>
+        <div class="row">
+          <p>Temperature:<span class="current" id="currentTemp"></span></p>
+        </div>
+        <div class="row">
+          <p>Humidity:<span class="current" id="currentHumidity"></span></p>
+        </div>
+        <div class="row">
+          <p>Wind Speed:<span class="current" id="currentWindSpeed"></span></p>
+        </div>
+        <div class="row">
+          <p>UV Index:<span class="current" id="currentUV"></span></p>
+        </div>
+      </div>
+      
+      <!-- float right below current -->
+      <div class="5DayForecast">
+        <h3>5-Day Forecast</h3>
+        <div class="dayContainer">
+          <div class="col-sm-2">
+            <p id="futureDate0"></p>
+            <p id="futureIcon0"></p>
+            <p>Temp:<span id='futureTemp0'></span></p>
+            <p>Humidity<span id="futureHumidity0"></span></p>
+          </div>
+          <div class="col-sm-2">
+            <p id="futureDate1"></p>
+            <p id="futureIcon1"></p>
+            <p>Temp:<span id='futureTemp1'></span></p>
+            <p>Humidity<span id="futureHumidity1"></span></p>
+          </div>
+          <div class="col-sm-2">
+            <p id="futureDate2"></p>
+            <p id="futureIcon2"></p>
+            <p>Temp:<span id='futureTemp2'></span></p>
+            <p>Humidity<span id="futureHumidity2"></span></p>
+          </div>
+          <div class="col-sm-2">
+            <p id="futureDate3"></p>
+            <p id="futureIcon3"></p>
+            <p>Temp:<span id='futureTemp3'></span></p>
+            <p>Humidity<span id="futureHumidity3"></span></p>
+          </div>
+          <div class="col-sm-2">
+            <p id="futureDate4"></p>
+            <p id="futureIcon4"></p>
+            <p>Temp:<span id='futureTemp4'></span></p>
+            <p>Humidity<span id="futureHumidity4"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
   
 </body>

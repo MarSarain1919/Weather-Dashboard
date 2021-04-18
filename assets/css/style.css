@@ -1,69 +1,37 @@
-/* * {
+* {
     font-family: 'Spartan', sans-serif;
 }
 
-body {
-    background-color: rgb(238, 245, 226);
-}
-
-header {
-    height: auto;
+nav {
+    background-color: pink;
+    color: white;
+    margin: 1%;
+    height: 100px;
     width: auto;
-    background-color: rgb(82, 172, 101);
-    margin: 0%;
 }
 
 h1 {
-    font-size: 40px;
-    color: white;
     text-align: center;
-    padding-left: 10%;
     padding-top: 2%;
 }
 
-.card {
+.searchContainer {
     display: flex;
     flex-direction: column;
     float: left;
+    width: auto;
+    margin: 4%;
 }
 
-h2 {
-    background-color: rgb(157, 204, 70);
-    color: white;
-    padding: 3%;
-    margin-top: 3%;
-}
-
-.searchBar {
-    display: flex;
-    flex-direction: column;
-    padding: 3%;
-}
-
-.btn {
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-
-.btn:hover {
-    cursor: pointer;
-}
-
-ul {
-    margin-top: 3%;
-    margin-bottom: 3%;
-}
-
-.weatherCast {
+.displayContainer{
     display: flex;
     flex-direction: column;
     float: right;
-   
+    width: auto;
+    margin: 4%;
 }
 
-p {
-     background-color: rgb(157, 204, 70);
-    color: white;
-    font-size: 20px;
-    padding: 1%;
-} */
+.dayContainer {
+    display: flex;
+    flex-direction: row;
+}
